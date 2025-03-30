@@ -1,0 +1,211 @@
+---
+import '../styles/global.css';
+// Component Imports
+import MainLayout from '../layouts/main-layout.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>The Welding School Manila</title>
+	</head>
+
+	<body>
+		<MainLayout 
+			title="Home" 
+			description="The Welding School Manila - Premier welding training institution providing quality education and certification for professional welders in the Philippines."
+			keywords="welding school, manila, philippines, training, certification, TESDA, SMAW, FCAW, GMAW, GTAW"
+		>
+			<!-- Hero Section -->
+			<section class="relative overflow-hidden">
+				<div class="absolute inset-0 bg-gradient-dark z-0">
+					<img 
+						src="/images/welding-1.jpg" 
+						alt="Professional welder at work" 
+						class="w-full h-full object-cover opacity-30 mix-blend-overlay"
+					/>
+				</div>
+				<div class="absolute inset-0 hero-gradient z-10"></div>
+				<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36 z-20">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+						<div class="text-white animate-fadeInUp">
+							<h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 gradient-text gradient-secondary">
+								The Welding School Manila in the Philippines
+							</h1>
+							<p class="text-xl mb-8 text-gray-200">
+								Professional training and certification for aspiring welders with industry-recognized qualifications.
+							</p>
+							<div class="flex flex-wrap gap-4">
+								<a href="/courses" class="gradient-secondary hover:opacity-90 text-white font-bold py-3 px-6 rounded-md transition duration-300 shadow-lg">
+									Explore Courses
+								</a>
+								<a href="/contact" class="glass-card text-white font-bold py-3 px-6 rounded-md transition duration-300">
+									Contact Us
+								</a>
+							</div>
+						</div>
+						<div class="hidden md:block">
+							<img 
+								src="/images/welding-1.jpg" 
+								alt="Professional welder at work" 
+								class="rounded-lg shadow-xl w-full h-auto transform hover:scale-105 transition duration-500"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Features Section -->
+			<section class="py-16 md:py-24 gradient-light">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16 animate-fadeInUp">
+						<h2 class="text-3xl md:text-4xl font-bold gradient-text gradient-primary mb-4">Why Choose Us</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+							The Welding School Manila provides industry-leading training with state-of-the-art facilities and expert instructors.
+						</p>
+					</div>
+					
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="glass-card p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+							<div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mb-6">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold gradient-text gradient-primary mb-3">Industry-Recognized Certifications</h3>
+							<p class="text-gray-600">
+								Our TESDA-accredited courses provide you with nationally recognized qualifications that enhance your employment prospects.
+							</p>
+						</div>
+						
+						<div class="glass-card p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+							<div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mb-6">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold gradient-text gradient-primary mb-3">Expert Instruction</h3>
+							<p class="text-gray-600">
+								Learn from certified welding professionals with years of industry experience who provide hands-on training and mentorship.
+							</p>
+						</div>
+						
+						<div class="glass-card p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+							<div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mb-6">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold gradient-text gradient-primary mb-3">State-of-the-Art Facilities</h3>
+							<p class="text-gray-600">
+								Practice on modern equipment with high-quality materials in our purpose-built training workshops and facilities.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Courses Section -->
+			<section class="py-16 md:py-24 gradient-dark text-white">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-16 animate-fadeInUp">
+						<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Courses</h2>
+						<p class="text-xl text-gray-300 max-w-3xl mx-auto">
+							Comprehensive training programs designed to meet industry standards and employer requirements.
+						</p>
+					</div>
+					
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="glass-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+							<div class="h-48 bg-gray-200 relative overflow-hidden">
+								<img 
+									src="/images/welding-3.jpg" 
+									alt="Shielded Metal Arc Welding (SMAW)" 
+									class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div class="p-6">
+								<h3 class="text-xl font-bold text-white mb-2">Shielded Metal Arc Welding (SMAW)</h3>
+								<p class="text-gray-300 mb-4">
+									Master stick welding techniques for various positions and materials with our comprehensive SMAW course.
+								</p>
+								<a href="/courses" class="gradient-text gradient-secondary font-medium hover:opacity-80">
+									Learn more →
+								</a>
+							</div>
+						</div>
+						
+						<div class="glass-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+							<div class="h-48 bg-gray-200 relative overflow-hidden">
+								<img 
+									src="/images/welding-4.jpg" 
+									alt="Flux-Cored Arc Welding (FCAW)" 
+									class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div class="p-6">
+								<h3 class="text-xl font-bold text-white mb-2">Flux-Cored Arc Welding (FCAW)</h3>
+								<p class="text-gray-300 mb-4">
+									Learn flux-cored welding for high deposition rate welding applications in various industrial settings.
+								</p>
+								<a href="/courses" class="gradient-text gradient-secondary font-medium hover:opacity-80">
+									Learn more →
+								</a>
+							</div>
+						</div>
+						
+						<div class="glass-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+							<div class="h-48 bg-gray-200 relative overflow-hidden">
+								<img 
+									src="/images/welding-5.jpg" 
+									alt="Gas Tungsten Arc Welding (GTAW/TIG)" 
+									class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div class="p-6">
+								<h3 class="text-xl font-bold text-white mb-2">Gas Tungsten Arc Welding (GTAW/TIG)</h3>
+								<p class="text-gray-300 mb-4">
+									Develop precision welding skills with TIG welding techniques for stainless steel, aluminum, and specialized materials.
+								</p>
+								<a href="/courses" class="gradient-text gradient-secondary font-medium hover:opacity-80">
+									Learn more →
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="text-center mt-12">
+						<a href="/courses" class="inline-block gradient-secondary hover:opacity-90 text-white font-bold py-3 px-8 rounded-md transition duration-300 shadow-lg">
+							View All Courses
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action -->
+			<section class="py-16 bg-gradient-to-br from-amber-500 to-orange-700">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center">
+						<h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+							Ready to Start Your Welding Career?
+						</h2>
+						<p class="text-xl text-white/80 max-w-3xl mx-auto mb-8">
+							Enroll today and take the first step towards becoming a certified professional welder.
+						</p>
+						<div class="flex flex-wrap justify-center gap-4">
+							<a href="/contact" class="glass-card hover:bg-white/20 text-white font-bold py-3 px-8 rounded-md transition duration-300">
+								Contact Us
+							</a>
+							<a href="/courses" class="bg-white/90 hover:bg-white text-orange-700 font-bold py-3 px-8 rounded-md shadow-lg transition duration-300">
+								View Courses
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</MainLayout>
+	</body>
+</html>

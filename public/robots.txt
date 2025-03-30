@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theweldingschoolmanila.com/sitemap-index.xml 
