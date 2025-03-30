@@ -11,7 +11,15 @@ export default function Footer() {
   }, []);
 
   const isActive = (path: string) => {
-    return currentPath.endsWith(path);
+    const normalizedCurrentPath =
+      currentPath.endsWith("/") && currentPath !== "/"
+        ? currentPath.slice(0, -1)
+        : currentPath;
+
+    const normalizedPath =
+      path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
+
+    return normalizedCurrentPath === normalizedPath;
   };
 
   return (
