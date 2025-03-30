@@ -11,7 +11,7 @@ export default function Footer() {
   }, []);
 
   const isActive = (path: string) => {
-    return currentPath === path;
+    return currentPath.endsWith(path);
   };
 
   return (

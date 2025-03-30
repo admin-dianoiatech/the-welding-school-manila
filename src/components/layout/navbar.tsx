@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   const isActive = (path: string) => {
-    return currentPath === path;
+    return currentPath.endsWith(path);
   };
 
   return (
