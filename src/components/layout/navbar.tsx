@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { cn } from "../../lib/utils";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,61 +39,67 @@ export default function Navbar() {
             <div className="flex items-center space-x-1 xl:space-x-4">
               <a
                 href="/"
-                className={`px-2 py-2 font-medium text-sm xl:text-base transition-colors ${
+                className={cn(
+                  "px-2 py-2 font-medium text-sm xl:text-base transition-colors",
                   isActive("/")
-                    ? "text-secondary border-b-2 border-secondary"
+                    ? "font-bold border-b-2 border-orange-500"
                     : "text-primary hover:text-primary-dark hover:border-b-2 hover:border-secondary/50"
-                }`}
+                )}
               >
                 Home
               </a>
               <a
                 href="/about"
-                className={`px-2 py-2 font-medium text-sm xl:text-base transition-colors ${
+                className={cn(
+                  "px-2 py-2 font-medium text-sm xl:text-base transition-colors",
                   isActive("/about")
-                    ? "text-secondary border-b-2 border-secondary"
+                    ? "font-bold border-b-2 border-orange-500"
                     : "text-primary hover:text-primary-dark hover:border-b-2 hover:border-secondary/50"
-                }`}
+                )}
               >
                 About Us
               </a>
               <a
                 href="/courses"
-                className={`px-2 py-2 font-medium text-sm xl:text-base transition-colors ${
+                className={cn(
+                  "px-2 py-2 font-medium text-sm xl:text-base transition-colors",
                   isActive("/courses")
-                    ? "text-secondary border-b-2 border-secondary"
+                    ? "font-bold border-b-2 border-orange-500"
                     : "text-primary hover:text-primary-dark hover:border-b-2 hover:border-secondary/50"
-                }`}
+                )}
               >
                 Courses
               </a>
               <a
                 href="/certifications"
-                className={`px-2 py-2 font-medium text-sm xl:text-base transition-colors ${
+                className={cn(
+                  "px-2 py-2 font-medium text-sm xl:text-base transition-colors",
                   isActive("/certifications")
-                    ? "text-secondary border-b-2 border-secondary"
+                    ? "font-bold border-b-2 border-orange-500"
                     : "text-primary hover:text-primary-dark hover:border-b-2 hover:border-secondary/50"
-                }`}
+                )}
               >
                 Certifications
               </a>
               <a
                 href="/services"
-                className={`px-2 py-2 font-medium text-sm xl:text-base transition-colors ${
+                className={cn(
+                  "px-2 py-2 font-medium text-sm xl:text-base transition-colors",
                   isActive("/services")
-                    ? "text-secondary border-b-2 border-secondary"
+                    ? "font-bold border-b-2 border-orange-500"
                     : "text-primary hover:text-primary-dark hover:border-b-2 hover:border-secondary/50"
-                }`}
+                )}
               >
                 Services
               </a>
               <a
                 href="/contact"
-                className={`px-2 py-2 font-medium text-sm xl:text-base transition-colors ${
+                className={cn(
+                  "px-2 py-2 font-medium text-sm xl:text-base transition-colors",
                   isActive("/contact")
-                    ? "text-secondary border-b-2 border-secondary"
+                    ? "font-bold border-b-2 border-orange-500"
                     : "text-primary hover:text-primary-dark hover:border-b-2 hover:border-secondary/50"
-                }`}
+                )}
               >
                 Contact
               </a>
@@ -112,7 +119,7 @@ export default function Navbar() {
               className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-primary-dark focus:outline-none"
             >
               <svg
-                className={`${isMenuOpen ? "hidden" : "block"} h-6 w-6`}
+                className={cn(isMenuOpen ? "hidden" : "block", "h-6 w-6")}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -127,7 +134,7 @@ export default function Navbar() {
                 />
               </svg>
               <svg
-                className={`${isMenuOpen ? "block" : "hidden"} h-6 w-6`}
+                className={cn(isMenuOpen ? "block" : "hidden", "h-6 w-6")}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -147,65 +154,71 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      <div className={`${isMenuOpen ? "block" : "hidden"} lg:hidden`}>
+      <div className={cn(isMenuOpen ? "block" : "hidden", "lg:hidden")}>
         <div className="pt-2 pb-3 space-y-1 border-t border-gray-200">
           <a
             href="/"
-            className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+            className={cn(
+              "block pl-3 pr-4 py-2 border-l-4 text-base font-medium",
               isActive("/")
-                ? "border-secondary text-secondary bg-secondary/10"
+                ? "font-bold border-b-2 border-orange-500"
                 : "border-transparent text-primary hover:bg-gray-50 hover:border-secondary/50"
-            }`}
+            )}
           >
             Home
           </a>
           <a
             href="/about"
-            className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+            className={cn(
+              "block pl-3 pr-4 py-2 border-l-4 text-base font-medium",
               isActive("/about")
-                ? "border-secondary text-secondary bg-secondary/10"
+                ? "font-bold border-b-2 border-orange-500"
                 : "border-transparent text-primary hover:bg-gray-50 hover:border-secondary/50"
-            }`}
+            )}
           >
             About Us
           </a>
           <a
             href="/courses"
-            className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+            className={cn(
+              "block pl-3 pr-4 py-2 border-l-4 text-base font-medium",
               isActive("/courses")
-                ? "border-secondary text-secondary bg-secondary/10"
+                ? "font-bold border-b-2 border-orange-500"
                 : "border-transparent text-primary hover:bg-gray-50 hover:border-secondary/50"
-            }`}
+            )}
           >
             Courses
           </a>
           <a
             href="/certifications"
-            className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+            className={cn(
+              "block pl-3 pr-4 py-2 border-l-4 text-base font-medium",
               isActive("/certifications")
-                ? "border-secondary text-secondary bg-secondary/10"
+                ? "font-bold border-b-2 border-orange-500"
                 : "border-transparent text-primary hover:bg-gray-50 hover:border-secondary/50"
-            }`}
+            )}
           >
             Certifications
           </a>
           <a
             href="/services"
-            className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+            className={cn(
+              "block pl-3 pr-4 py-2 border-l-4 text-base font-medium",
               isActive("/services")
-                ? "border-secondary text-secondary bg-secondary/10"
+                ? "font-bold border-b-2 border-orange-500"
                 : "border-transparent text-primary hover:bg-gray-50 hover:border-secondary/50"
-            }`}
+            )}
           >
             Services
           </a>
           <a
             href="/contact"
-            className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
+            className={cn(
+              "block pl-3 pr-4 py-2 border-l-4 text-base font-medium",
               isActive("/contact")
-                ? "border-secondary text-secondary bg-secondary/10"
+                ? "font-bold border-b-2 border-orange-500"
                 : "border-transparent text-primary hover:bg-gray-50 hover:border-secondary/50"
-            }`}
+            )}
           >
             Contact
           </a>
