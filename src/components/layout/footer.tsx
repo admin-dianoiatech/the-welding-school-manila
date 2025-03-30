@@ -235,7 +235,7 @@ export default function Footer() {
                 href="/contact"
                 className="block w-full text-center gradient-secondary hover:opacity-90 text-white font-medium py-3 px-6 rounded-md transition duration-300 shadow-lg"
               >
-                Enroll Now
+                Inquire Now
               </a>
             </div>
           </div>
