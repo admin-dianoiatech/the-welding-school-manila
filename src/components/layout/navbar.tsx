@@ -116,7 +116,7 @@ export default function Navbar() {
               href="/contact"
               className="ml-4 text-center gradient-secondary hover:opacity-90 text-white font-medium py-2 px-4 xl:py-3 xl:px-6 text-sm xl:text-base rounded-md transition duration-300 shadow-lg whitespace-nowrap"
             >
-              Contact Us
+              Inquire Now
             </a>
           </div>
 
@@ -235,7 +235,7 @@ export default function Navbar() {
               href="/contact"
               className="block w-full text-center gradient-secondary hover:opacity-90 text-white font-medium py-3 px-6 rounded-md transition duration-300 shadow-lg"
             >
-              Contact Us
+              Inquire Now
             </a>
           </div>
         </div>
